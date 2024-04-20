@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/add_round_key.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/reg.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/sbox.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/sub_byte.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/shift_rwos.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/gfmult_by2.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/column_calculator.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/mix_columns.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/controller.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/key_sch_round_function.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/key_schedule.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-ENC/RTL/aes_enc.vhd" \
+
+# Do not sort compile order
+nosort

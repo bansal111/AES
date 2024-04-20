@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "aes_enc_behav" "xil_defaultlib.aes_enc" -log "elaborate.log" 
