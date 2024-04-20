@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/add_round_key.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/reg.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/gfmult_by2.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/column_calculator.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_column_calculator.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_mix_columns.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_shift_rwos.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_sbox.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_sub_byte.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/sbox.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_key_sch_round_function.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/key_schedule.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/controller.vhd" \
+"../../../../../AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/aes_dec.vhd" \
+
+# Do not sort compile order
+nosort

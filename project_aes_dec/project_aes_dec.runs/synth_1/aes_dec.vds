@@ -1,0 +1,301 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Apr 17 16:15:13 2024
+# Process ID: 14144
+# Current directory: G:/vivado project/project_aes_dec/project_aes_dec.runs/synth_1
+# Command line: vivado.exe -log aes_dec.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes_dec.tcl
+# Log file: G:/vivado project/project_aes_dec/project_aes_dec.runs/synth_1/aes_dec.vds
+# Journal file: G:/vivado project/project_aes_dec/project_aes_dec.runs/synth_1\vivado.jou
+# Running On: DESKTOP-A4HIRKD, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 2, Host memory: 12791 MB
+#-----------------------------------------------------------
+source aes_dec.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 465.918 ; gain = 181.445
+Command: read_checkpoint -auto_incremental -incremental {G:/vivado project/project_aes_dec/project_aes_dec.srcs/utils_1/imports/synth_1/aes_dec.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from G:/vivado project/project_aes_dec/project_aes_dec.srcs/utils_1/imports/synth_1/aes_dec.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top aes_dec -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12996
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1321.715 ; gain = 440.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'aes_dec' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/aes_dec.vhd:31]
+INFO: [Synth 8-638] synthesizing module '\reg ' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/reg.vhd:29]
+	Parameter size bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/reg.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'add_round_key' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/add_round_key.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'add_round_key' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/add_round_key.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'inv_mix_columns' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_mix_columns.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'inv_column_calculator' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_column_calculator.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'gfmult_by2' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/gfmult_by2.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'gfmult_by2' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/gfmult_by2.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'column_calculator' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/column_calculator.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'column_calculator' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/column_calculator.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'inv_column_calculator' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_column_calculator.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'inv_mix_columns' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_mix_columns.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'inv_shift_rows' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_shift_rwos.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'inv_shift_rows' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_shift_rwos.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'inv_sub_byte' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_sub_byte.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'inv_sbox' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_sbox.vhd:27]
+INFO: [Synth 8-226] default block is never used [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_sbox.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'inv_sbox' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_sbox.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'inv_sub_byte' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_sub_byte.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'key_schedule' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/key_schedule.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'inv_ksch_round_func' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_key_sch_round_function.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'sbox' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/sbox.vhd:27]
+INFO: [Synth 8-226] default block is never used [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/sbox.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/sbox.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'inv_ksch_round_func' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/inv_key_sch_round_function.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'key_schedule' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/key_schedule.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'controller' [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/controller.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'controller' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/controller.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'aes_dec' (0#1) [G:/vivado project/AES-VHDL-master/AES-VHDL-master/AES-DEC/RTL/aes_dec.vhd:31]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1431.672 ; gain = 550.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1431.672 ; gain = 550.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1431.672 ; gain = 550.062
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1431.672 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/vivado project/project_aes_dec/project_aes_dec.srcs/constrs_1/new/project_aes_dec.xdc]
+Finished Parsing XDC File [G:/vivado project/project_aes_dec/project_aes_dec.srcs/constrs_1/new/project_aes_dec.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/vivado project/project_aes_dec/project_aes_dec.srcs/constrs_1/new/project_aes_dec.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/aes_dec_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/aes_dec_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1533.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1533.941 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   2 Input     24 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 76    
+	   3 Input      8 Bit         XORs := 17    
++---Registers : 
+	              128 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-----------------------------------------------------------------------------------+---------------+----------------+
+|Module Name | RTL Object                                                                        | Depth x Width | Implemented As | 
++------------+-----------------------------------------------------------------------------------+---------------+----------------+
+|inv_sbox    | output_byte                                                                       | 256x8         | LUT            | 
+|sbox        | output_byte                                                                       | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[0].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[1].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[2].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[3].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[4].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[5].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[6].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[7].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[8].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[9].sbox_inst/output_byte                                    | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[10].sbox_inst/output_byte                                   | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[11].sbox_inst/output_byte                                   | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[12].sbox_inst/output_byte                                   | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[13].sbox_inst/output_byte                                   | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[14].sbox_inst/output_byte                                   | 256x8         | LUT            | 
+|aes_dec     | inv_sub_byte_inst/gen[15].sbox_inst/output_byte                                   | 256x8         | LUT            | 
+|aes_dec     | key_schedule_inst/key_sch_round_function_inst/gen_sboxes[1].sbox_inst/output_byte | 256x8         | LUT            | 
+|aes_dec     | key_schedule_inst/key_sch_round_function_inst/gen_sboxes[2].sbox_inst/output_byte | 256x8         | LUT            | 
+|aes_dec     | key_schedule_inst/key_sch_round_function_inst/gen_sboxes[3].sbox_inst/output_byte | 256x8         | LUT            | 
+|aes_dec     | key_schedule_inst/key_sch_round_function_inst/gen_sboxes[0].sbox_inst/output_byte | 256x8         | LUT            | 
++------------+-----------------------------------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:46 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:47 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:48 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:51 ; elapsed = 00:02:01 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:51 ; elapsed = 00:02:01 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     2|
+|3     |LUT2  |   163|
+|4     |LUT3  |   160|
+|5     |LUT4  |    57|
+|6     |LUT5  |   167|
+|7     |LUT6  |   893|
+|8     |MUXF7 |    64|
+|9     |FDRE  |   151|
+|10    |FDSE  |   109|
+|11    |IBUF  |    18|
+|12    |OBUF  |    16|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:02:02 . Memory (MB): peak = 1533.941 ; gain = 652.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1533.941 ; gain = 550.062
+Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:02:02 . Memory (MB): peak = 1533.941 ; gain = 652.332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1533.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1533.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ef9851d0
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:42 . Memory (MB): peak = 1533.941 ; gain = 1064.059
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1533.941 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'G:/vivado project/project_aes_dec/project_aes_dec.runs/synth_1/aes_dec.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aes_dec_utilization_synth.rpt -pb aes_dec_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 17 16:18:28 2024...
